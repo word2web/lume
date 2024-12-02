@@ -1,0 +1,14 @@
+lang: en
+home:
+  welcome: Hello. Thanks for visiting my site.
+menu_links: []
+metas:
+  site: Graham Twaddle
+  description: >-
+    Graham Twaddle - information management, corporate communications, business
+    software and other stuff.
+  title: =title
+  image: =image
+  twitter: '@username'
+  lang: en
+  generator: false
