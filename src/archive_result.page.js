@@ -4,7 +4,7 @@ export default function* ({ search, i18n }) {
   // Generate a page for each tag
   for (const tag of search.values("tags")) {
     yield {
-      url: `/archive/${tag}/`,
+      url: `/blog/${tag}/`,
       title: `${i18n.search.by_tag}  “${tag}”`,
       type: "tag",
       search_query: `type=post '${tag}'`,
