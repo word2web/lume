@@ -4,6 +4,6 @@ title: About
 url: /about/
 menu:
   visible: true
-  order: 1
+  order: 3
 ---
 Hola
