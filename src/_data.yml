@@ -1,7 +1,11 @@
 lang: en
 home:
-  welcome: Hello. Thanks for visiting my site.
-menu_links: []
+  welcome: Hello. Thanks for visiting.
+menu_links:
+  - title: Link
+    url: /blog/
+  - title: Another link
+    url: 'https://www.google.co.uk'
 metas:
   site: Graham Twaddle
   description: >-
@@ -9,6 +13,5 @@ metas:
     software and other stuff.
   title: =title
   image: =image
-  twitter: '@elonmusk'
   lang: en
   generator: false

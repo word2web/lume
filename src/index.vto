@@ -5,39 +5,20 @@ title: Home
 ---
 
 <header class="page-header">
-  <h1 class="page-title">{{ home.welcome }}</h1>
-
-  
+<h1 class="page-title">{{ home.welcome }}</h1>
 </header>
+<p>I'm Graham Twaddle and since 2017 I've been a contractor specialising in information / knowledge management and corporate communications.</p>
+<p>This site is a home for my blog and for some wee personal projects I've been working on.</p>
+<p>Enjoy &#128522;</p>
+
 <h1>Most recent blog posts</h1>
-<section class="postList">
+<ul class="postList">
   {{ for post of search.pages("type=post", "date=desc", 3) }}
-  <article class="post">
-    <header class="post-header">
-      <h2 class="post-title">
-        <a href="{{ post.url }}" {{ if post.url == url }} aria-current="page"{{ /if }}>
-          {{ post.title || post.url }}
-        </a>
-      </h2>
-
-      {{ include "templates/post-details.vto" {
-        date: post.date,
-        tags: post.tags,
-        author: post.author,
-        readingInfo: post.readingInfo
-        } }}
-    </header>
-
-    <div class="post-excerpt body">
-      {{ post.excerpt |> md }}
-    </div>
-
-    <a href="{{ post.url }}" class="post-link">
-      {{ i18n.nav.continue_reading }}
-    </a>
-  </article>
-{{ /for }}
-</section>
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {{ /for }}
+</ul>
 
 <hr>
 
